@@ -1,0 +1,959 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/public.css"/>
+		<link rel="stylesheet" type="text/css" href="css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="css/bootsrap.css"/>
+		<link rel="stylesheet" type="text/css" href="css/bootsrap1024.css"/>
+		<link rel="stylesheet" type="text/css" href="css/jNotify.css"/>
+		<link rel="stylesheet" type="text/css" href="css/layer.css"/>
+		<link rel="stylesheet" type="text/css" href="css/page.css"/>
+		
+	</head>
+	<body>
+		<div class="topAD" onclick="this.style.display=&#39;none&#39;"></div>
+		<div class="header">
+    	<!-- <div class="topLine"></div> -->
+    	<div class="hearderTop">
+	    	<div class="container">
+		    	<ul class="headerTop_ul pt5 pb5 row f12">
+		    		<li class="span8" id="loginStatus">
+		    			<!-- <a class="mr30" href="javascript:void(0)">欢迎回到多拿网, 傻猪猪</a>
+		    			<a class="mr30" href="javascript:void(0)">退出</a> -->
+		    			<a class="mr30" href="login.html">[登录]</a>
+		    			<a class="mr30" href="register.html">[注册]</a>
+		    		</li>
+		    		<li class="fr clearfix">
+		    			<a class="fl ml10" href="first.html" id="userDuona">我的多拿</a>
+		    			<a class="fl ml10" href="cart.html" id="userBuyCart"><b class="icons iCard fl"></b>购物车</a>
+		    			<!-- <a class="fl ml10" href="javascript:void(0)"><b class="icons iPhone fl"></b>手机版</a> -->
+		    			<a class="fl ml10" href="#" id="addDuona2Favorite"><b class="icons iStar fl"></b>收藏多拿</a>
+		    			<a class="fl ml10" href="#">入驻多拿</a>
+		    			<a class="fl ml10" href="help.html">帮助</a>
+		    		</li>
+		    	</ul>
+	    	</div>
+   	 	</div>
+   	 	<div class="headerContent container pr">
+   	 		<div class="row">
+	   	 		<a class="span3 dLogo" href="first.html">多拿网</a>
+	   	 		<a class="span3 dWord" href="first.html">线下返利第一站</a>
+	   	 		<div class="span7 offset1 mt15">
+					<form class="headerSearch form-search" method="get" action="#">
+						<input type="text" name="keyword" placeholder="搜索你想要的代金券..." x-webkit-speech="" class="input-medium search-query f12"id="qq">
+						<button type="submit" class="searchBtn"></button>
+					</form>
+					<div class="yh f12 hotWords mt5">
+						
+<a href="#" target="_blank"> LEVEL.A发廊</a>
+<a class="textRed" href="#" target="_blank"> 奈莉尔美容院</a>
+<a href="#" target="_blank"> 花之生活馆</a>
+
+					</div>
+	   	 		</div>
+	   	 		
+	   	 		<div class="span6 dSlogan">上多拿券都有</div>
+   	 		</div>
+   	 		<div class="xiaoDuo pa">小多，多拿网形象</div>
+   	 	</div>
+		<div class="w menuBar">
+			<ul class="container auto cleafix menuBar_menu tc yh pr f16 fb" id="menuBar_menu">
+				<li class="allClass fl pr ml30 mr80"><a href="#all/" class="white">全部代金券</a><span class="arrowicons pa"></span></li>
+				<li class="fl selected" data-flag="true"><a href="#" class="white">首页</a></li>
+				
+<li class="line fl"></li><li class="fl" data-flag="true"><a href="food.html" class="white">餐饮美食</a></li>
+<li class="line fl"></li><li class="fl" data-flag="true"><a href="#" class="white">休闲娱乐</a></li>
+<li class="line fl"></li><li class="fl" data-flag="true"><a href="#" class="white">美容保健</a></li>
+<li class="line fl"></li><li class="fl" data-flag="true"><a href="#" class="white">生活服务</a></li>
+
+			</ul>
+		</div>
+    </div>
+	<div class="duonaAD container yh">
+	<div class="row pr">
+		<div class="span4 sideNav abs-left">
+			<ul id="sideNavContent" class="sideNav_ul oh">
+				
+<li>
+	<h5 class="bf icons ifood">餐饮美食</h5>
+	<div class="sideNav_ul_label">
+					<a href="#">小吃快餐</a>
+																											、
+												<a class="textRed" href="#">蛋糕甜品</a>
+																																						、
+																		<a href="#">西餐</a>
+																																、
+												<a class="textRed" href="#">日韩料理</a>
+																																						、
+																		<a href="#">地方菜</a>
+																																、
+												<a class="textRed" href="#">海鲜</a>
+																																						、
+																		<a href="#">烧烤</a>
+																																																					</div>
+</li>
+<li>
+	<h5 class="bf icons iRecreation">休闲娱乐</h5>
+	<div class="sideNav_ul_label">
+					<a href="#">景点/郊游</a>
+																											、
+												<a class="textRed" href="#">摄影</a>
+																																																						、
+																		<a href="#">运动健身</a>
+																																、
+												<a class="textRed" href="#">棋牌</a>
+																																						、
+																		<a href="#">桌球</a>
+																																																																																、
+												<a class="textRed" href="#">酒店</a>
+																											</div>
+</li>
+<li>
+	<h5 class="bf icons iBeauty">美容保健</h5>
+	<div class="sideNav_ul_label">
+					<a href="#">美发</a>
+																											、
+												<a class="textRed" href="#">化妆品</a>
+																																						、
+																		<a href="#">瑜伽</a>
+																																、
+												<a class="textRed" href="#">养生健身</a>
+																																						、
+																		<a href="#">美甲</a>
+																																、
+												<a class="textRed" href="#">美容spa</a>
+																																						、
+																		<a href="#">足疗按摩</a>
+																					</div>
+</li>
+<li>
+	<h5 class="bf icons iLive">生活服务</h5>
+	<div class="sideNav_ul_label">
+					<a href="#shenghuofuwu/?category.alias=qicheyanghu">汽车养护</a>
+																											、
+												<a class="textRed" href="#">健康护理</a>
+																																																																						、
+																		<a href="#">服装箱包</a>
+																																、
+												<a class="textRed" href="#">电子产品</a>
+																																											</div>
+</li>
+
+				
+			</ul>
+			<div id="arrowBtnBlock" class="h30 arrowBtn pa tc">
+				<a class="block icons iArrow auto" href="javascript:void(0)"></a>
+			</div>
+		</div>
+		<!-- 广告图 -->
+		<div id="myCarousel" class="mainAD span17 carousel slide pa" style="overflow: hidden;">
+			<ol class="carousel-indicators">
+				<li data-target="#myCarousel" data-slide-to="0" class=""></li>
+				<li data-target="#myCarousel" data-slide-to="1" class=""></li>
+				<li data-target="#myCarousel" data-slide-to="2" class="active"></li>
+				<li data-target="#myCarousel" data-slide-to="3" class=""></li>
+			</ol>
+			<!-- Carousel items -->
+			<ul class="carousel-inner" style="height: 412.5px;">
+				<li class="item">
+					<a href="#"><img src="./img/AD1.jpg" alt=""></a>
+				</li>
+				<li class="item">
+					<a href="#" target="_blank"><img src="./img/AD2.jpg" alt=""></a>
+				</li>
+				<li class="item active">
+					<a href="# " target="_blank"><img src="./img/AD3.jpg" alt=""></a>
+				</li>
+				<li class="item">
+					<a href="#" target="_blank"><img src="./img/AD4.jpg" alt=""></a>
+				</li>
+			</ul>
+			<!-- Carousel nav -->
+			<a class="carousel-control left" href="#" data-slide="prev">‹</a> <a class="carousel-control right" href="#" data-slide="next">›</a>
+		</div>
+		<!-- 广告图·结束 -->
+	</div>
+</div>
+
+<div class="duonaSale container yh">
+   	<div class="row">
+    	<div class="span15">
+    		<h3 class="bf oh">
+    			<strong class="f20 fn textRed mr10 fl">小多推荐</strong>
+    			<span class="f14 fn fl">Duona Sale</span>
+    			<a class="fr mr30" href="#"><em class="f14 fn textRed"> more</em></a>
+    		</h3>
+    		<ul class="duonaSale_ul oh">
+				
+<li class="tc">
+	<span class="icons iLabel block mt10 ml10 tl h25 white">01</span>
+		<a href="#" target="_blank"><img class="default img-polaroid" src="img/fabea1c7-706c-44bc-b57e-3b47685397ca.jpg" style="display: inline;"></a>
+	<a class="block ml10 mt10 symbleDot" href="#" target="_blank" title="自然美（采韵居）美容养生馆水娃娃美白嫩肤体验套餐">自然美（采韵居）美容养生馆水娃娃美白嫩肤体验套餐</a>
+	<strong class="mt10 block f12 fn">还剩余<span class="textRed">452</span>张</strong>
+	</li>
+<li class="tc">
+	<span class="icons iLabel block mt10 ml10 tl h25 white">02</span>
+		<a href="#" target="_blank"><img class="default img-polaroid" src="img/af7ef7e5-865b-4a92-ac8c-a462661cad18.jpg" style="display: inline;"></a>
+	<a class="block ml10 mt10 symbleDot" href="#" target="_blank" title="湘妃楼消费满100元减15元">湘妃楼消费满100元减15元</a>
+	<strong class="mt10 block f12 fn">还剩余<span class="textRed">861</span>张</strong>
+	</li>
+<li class="tc">
+	<span class="icons iLabel block mt10 ml10 tl h25 white">03</span>
+		<a href="#" target="_blank"><img src="img/b18ada9a-4d32-4711-9b61-1ecd16674836.jpg" style="display: inline;"></a>
+	<a class="block ml10 mt10 symbleDot" href="#" target="_blank" title="祥和酒店时钟房/3小时套餐">祥和酒店时钟房/3小时套餐</a>
+	<strong class="mt10 block f12 fn">还剩余<span class="textRed">698</span>张</strong>
+	</li>
+<li class="tc">
+	<span class="icons iLabel block mt10 ml10 tl h25 white">04</span>
+		<a href="#" target="_blank"><img class="default img-polaroid" src="img/43f8ef43-04c4-4658-81ab-5ce3d32d71da.jpg" style="display: inline;"></a>
+	<a class="block ml10 mt10 symbleDot" href="#" target="_blank" title="贵州风味消费满100元减20元的大优惠">贵州风味消费满100元减20元的大优惠</a>
+	<strong class="mt10 block f12 fn">还剩余<span class="textRed">456</span>张</strong>
+	</li>
+<li class="tc">
+	<span class="icons iLabel block mt10 ml10 tl h25 white">05</span>
+		<a href="#" target="_blank"><img class="default img-polaroid" src="img/9d1b2ca3-9154-41e1-b121-e58b15f18487.jpg" style="display: inline;"></a>
+	<a class="block ml10 mt10 symbleDot" href="#" target="_blank" title="源缘度假山庄真人CS野战套餐">源缘度假山庄真人CS野战套餐</a>
+	<strong class="mt10 block f12 fn">还剩余<span class="textRed">651</span>张</strong>
+	</li>
+
+    		</ul>
+    	</div>
+    	<div class="duonaSaleMap fl mt20 tc pr">
+    		<h5 class="SaleMapTitle pl30 f20 icons iMap tl">地区选择 <span class="fn f14">Region Selection</span></h5>
+    		<img class="mt10 " src="img/duonaMap.png" usemap="#duonaMap" width="271">
+    		<map name="duonaMap" id="duonaMap">
+    			<area shape="poly" href="#" alt="荔湾区" coords="80,10,124,39,136,54,137,71,155,83,152,95,138,96,132,107,106,115,79,107,55,105,40,98,32,105,29,117,18,109,18,94,5,82,2,60,7,46,47,31,64,14,81,10">
+    			<area shape="poly" href="#" alt="海珠区" coords="56,111,46,121,35,126,50,160,48,178,62,186,75,179,91,177,104,167,117,164,119,158,104,121,77,112,56,111,55,112">
+    			<area shape="poly" href="#" alt="越秀区" coords="137,112,143,100,151,99,162,95,171,103,178,104,194,143,192,153,159,167,138,167,121,159,111,118,136,113">
+    			<area shape="poly" href="#" alt="天河区" coords="237,17,218,16,209,24,190,68,181,98,195,136,208,156,234,155,244,130,246,98,267,98,268,79,258,68,264,57,237,37,237,16">
+    			<area shape="poly" href="#" alt="番禺区" coords="140,170,148,177,140,185,167,216,162,226,149,224,129,233,95,226,67,197,66,188,82,182,97,181,119,168,142,171">
+    			<area shape="poly" href="#" alt="白云区" coords="177,97,190,44,210,11,225,10,221,6,209,5,197,1,171,2,142,4,115,3,90,3,88,5,93,10,123,34,139,53,143,72,162,83,163,92,173,99,178,98">
+    		</map>
+    		<a class="pa p5 f12" href="#">查看更多+</a>
+		</div>
+	</div>
+</div><!-- Sale end -->
+<div class="mainContent container">
+<h3 class="contentTitle icons cFood bf clearfix">
+	<strong class="f20 textYellow">餐饮美食</strong>
+	<span class="f14 fn">Food and Drink</span>
+	<strong class="fn ml50 mr5 f12 textRed">热门推介：</strong>
+				<a class="mrt5 text333 f12 fn" href="#">小吃快餐</a>
+										<a class="mrt5 textRed f12 fn" href="#">蛋糕甜品</a>
+						<a class="mrt5 text333 f12 fn" href="#">西餐</a>
+										<a class="mrt5 textRed f12 fn" href="#">日韩料理</a>
+						<a class="mrt5 text333 f12 fn" href="#">地方菜</a>
+										<a class="mrt5 textRed f12 fn" href="#">海鲜</a>
+						<a class="mrt5 text333 f12 fn" href="#">烧烤</a>
+										<a class="mrt5 textRed f12 fn" href="#">火锅</a>
+						<a class="mrt5 text333 f12 fn" href="#">自助餐</a>
+						<a class="fr f14 textYellow" href="#">更多<span class="arrow_tra fr ml5 mt10"></span></a>
+</h3>
+<div class="mainRow row oh">
+		<div class="span4">
+		<dl class="duonaBox yh">
+			<dt>
+    			<strong class="topBx clearfix fn f12 yh pt5 pb5">
+    				    				<span class="fl icons iHeart pl30">2598</span>
+    				<span class="fr mr10">剩余：861</span>
+    			</strong>
+    			<a class="pr" href="#" target="_blank">
+    				<em class="white pa f18 transition time_2s">仅售：0.99元</em>
+    				<span class="pa blackMask"></span>
+    				<img class="default" src="img/af7ef7e5-865b-4a92-ac8c-a462661cad18.jpg" style="display: inline;">
+    			</a>
+			</dt>
+									<dd class="clearfix">
+				<h6 class="ml10 mr10 symbleDot"><a class="f14" href="#" target="_blank">湘妃楼消费满100元减15元</a></h6>	    			
+				<p class="fl ml10">面值:<strong class="f24 textRed mr5 ml5">15</strong>元</p>
+				<p class="fr mr10 white f12">返利6.8元</p>
+			</dd>
+		</dl>
+	</div>
+		<div class="span4">
+		<dl class="duonaBox yh">
+			<dt>
+    			<strong class="topBx clearfix fn f12 yh pt5 pb5">
+    				    				<span class="fl icons iHeart pl30">1377</span>
+    				<span class="fr mr10">剩余：456</span>
+    			</strong>
+    			<a class="pr" href="#" target="_blank">
+    				<em class="white pa f18 transition time_2s">仅售：0.99元</em>
+    				<span class="pa blackMask"></span>
+    				<img class="default" alt="贵州风味消费满100元减20元的大优惠" src="img/43f8ef43-04c4-4658-81ab-5ce3d32d71da.jpg" style="display: inline;">
+    			</a>
+			</dt>
+									<dd class="clearfix">
+				<h6 class="ml10 mr10 symbleDot"><a class="f14" href="#" target="_blank">贵州风味消费满100元减20元的大优惠</a></h6>	    			
+				<p class="fl ml10">面值:<strong class="f24 textRed mr5 ml5">20</strong>元</p>
+				<p class="fr mr10 white f12">返利8元</p>
+			</dd>
+		</dl>
+	</div>
+		<div class="span4">
+		<dl class="duonaBox yh">
+			<dt>
+    			<strong class="topBx clearfix fn f12 yh pt5 pb5">
+    				    				<span class="fl icons iHeart pl30">12378</span>
+    				<span class="fr mr10">剩余：4123</span>
+    			</strong>
+    			<a class="pr" href="#" target="_blank">
+    				<em class="white pa f18 transition time_2s">仅售：0.99元</em>
+    				<span class="pa blackMask"></span>
+    				<img class="default" alt="川粤食客消费满250元减50元" src="img/ccf2a3ee-560c-41ea-a72d-178082d767ab.jpg" style="display: inline;">
+    			</a>
+			</dt>
+									<dd class="clearfix">
+				<h6 class="ml10 mr10 symbleDot"><a class="f14" href="#" target="_blank">川粤食客消费满250元减50元</a></h6>	    			
+				<p class="fl ml10">面值:<strong class="f24 textRed mr5 ml5">50</strong>元</p>
+				<p class="fr mr10 white f12">返利16元</p>
+			</dd>
+		</dl>
+	</div>
+		<div class="span4">
+		<dl class="duonaBox yh">
+			<dt>
+    			<strong class="topBx clearfix fn f12 yh pt5 pb5">
+    				    				<span class="fl icons iHeart pl30">2472</span>
+    				<span class="fr mr10">剩余：820</span>
+    			</strong>
+    			<a class="pr" href="#" target="_blank">
+    				<em class="white pa f18 transition time_2s">仅售：0.99元</em>
+    				<span class="pa blackMask"></span>
+    				<img class="default" src="img/3ca8651f-b5d6-42c6-9ee2-c6fb2a75bb28.jpg" style="display: inline;">
+    			</a>
+			</dt>
+									<dd class="clearfix">
+				<h6 class="ml10 mr10 symbleDot"><a class="f14" href="#" target="_blank">万家香菜馆（消费满200元可用）</a></h6>	    			
+				<p class="fl ml10">面值:<strong class="f24 textRed mr5 ml5">30</strong>元</p>
+				<p class="fr mr10 white f12">返利13.6元</p>
+			</dd>
+		</dl>
+	</div>
+		<div class="duonaBrand yellowBrand w250 yh">
+		<div class="accordion duonaBox" id="accordion1">
+			<h5 class="ml10 f16 bf">餐饮美食 <span class="fn">·</span> 排行榜</h5>
+			            <div class="accordion-group">
+            					<div class="accordion-heading yellowBG">
+					                <a class="accordion-toggle symbleDot" title="印度餐厅（满100元可用）" data-toggle="collapse" data-parent="#accordion1" href="#">
+	                  <!--1.-->[2元]印度餐厅（满100元可用）
+	                </a>
+             	</div>
+								<div id="collapseOne41" class="accordion-body in collapse" style="height: auto;">
+					                <div class="accordion-inner">
+						<a href="#" target="_blank"><img class="default" alt="印度餐厅（满100元可用）" src="img/8d66279f-82ea-425d-866b-e2112c1612c2.jpg" style="display: inline;"></a>
+	                </div>
+				</div>
+			</div>
+                        <div class="accordion-group">
+            					<div class="accordion-heading">
+					                <a class="accordion-toggle symbleDot" title="东方国际饭店-东方阁西餐厅任何消费：8折优惠" data-toggle="collapse" data-parent="#accordion1" href="#">
+	                  <!--2.-->[$denomination.credit元]东方国际饭店-东方阁西餐厅任何消费：8折优惠
+	                </a>
+             	</div>
+								<div id="collapseOne356" class="accordion-body collapse" style="height: 0;">
+					                <div class="accordion-inner">
+						<a href="#" target="_blank"><img class="default" alt="东方国际饭店-东方阁西餐厅任何消费：8折优惠" src="img/e530c278-bde3-423b-abef-eeb3efb3fe6f.jpg" style="display: inline;"></a>
+	                </div>
+				</div>
+			</div>
+                        <div class="accordion-group">
+            					<div class="accordion-heading">
+					                <a class="accordion-toggle symbleDot" title="湘妃楼消费满100元减15元" data-toggle="collapse" data-parent="#accordion1" href="#">
+	                  <!--3.-->[15元]湘妃楼消费满100元减15元
+	                </a>
+             	</div>
+								<div id="collapseOne339" class="accordion-body collapse" style="height: 0;">
+					                <div class="accordion-inner">
+						<a href="#" target="_blank"><img class="default" alt="湘妃楼消费满100元减15元" src="img/446686a0-466e-4497-a603-f7f5962bd9a9.jpg" style="display: inline;"></a>
+	                </div>
+				</div>
+			</div>
+                        <div class="accordion-group">
+            					<div class="accordion-heading">
+					                <a class="accordion-toggle symbleDot" title="赤岗川菜馆（满100元可用）" data-toggle="collapse" data-parent="#accordion1" href="#">
+	                  <!--4.-->[2元]赤岗川菜馆（满100元可用）
+	                </a>
+             	</div>
+								<div id="collapseOne93" class="accordion-body collapse" style="height: 0;">
+					                <div class="accordion-inner">
+						<a href="#" target="_blank"><img class="default" alt="赤岗川菜馆（满100元可用）" src="img/24305293-a6fd-4fea-a9aa-c036690ad3d1.jpg" style="display: inline;"></a>
+	                </div>
+				</div>
+			</div>
+                        <div class="accordion-group">
+            					<div class="accordion-heading">
+					                <a class="accordion-toggle symbleDot" title="万家香菜馆（消费满200元可用）" data-toggle="collapse" data-parent="#accordion1" href="#">
+	                  <!--5.-->[30元]万家香菜馆（消费满200元可用）
+	                </a>
+             	</div>
+								<div id="collapseOne148" class="accordion-body collapse" style="height: 0;">
+					                <div class="accordion-inner">
+						<a href="#" target="_blank"><img class="default" src="img/60beca8e-7a0b-41c4-96f4-7903bfd67285.jpg" style="display: inline;"></a>
+	                </div>
+				</div>
+			</div>
+                  </div><!-- 手风琴内容·结束 -->
+	</div><!-- 榜单·结束 -->
+</div>
+<!-- 休闲娱乐 -->
+<h3 class="contentTitle icons cRecreation bf clearfix">
+	<strong class="f20 textBlue">休闲娱乐</strong>
+	<span class="f14 fn">Recreation</span>
+	<strong class="fn ml50 mr5 f12 textRed">热门推介：</strong>
+				<a class="mrt5 text333 f12 fn" href="#">景点/郊游</a>
+										<a class="mrt5 textRed f12 fn" href="#">摄影</a>
+						<a class="mrt5 text333 f12 fn" href="#">电影</a>
+										<a class="mrt5 textRed f12 fn" href="#">运动健身</a>
+						<a class="mrt5 text333 f12 fn" href="#">棋牌</a>
+										<a class="mrt5 textRed f12 fn" href="#">桌球</a>
+						<a class="mrt5 text333 f12 fn" href="#">酒吧</a>
+										<a class="mrt5 textRed f12 fn" href="#">咖啡茶馆</a>
+						<a class="mrt5 text333 f12 fn" href="#">ktv</a>
+										<a class="mrt5 textRed f12 fn" href="#">酒店</a>
+				<a class="fr f14 textBlue" href="#">更多<span class="arrow_tra fr ml5 mt10"></span></a>
+</h3>
+<div class="mainRow row oh">
+	<div class="span4">
+		<dl class="duonaBox yh">
+			<dt>
+    			<strong class="topBx clearfix fn f12 yh pt5 pb5">
+    				    				<span class="fl icons iHeart pl30">2103</span>
+    				<span class="fr mr10">剩余：698</span>
+    			</strong>
+    			<a class="pr" href="#" target="_blank">
+    				<em class="white pa f18 transition time_2s">仅售：0.99元</em>
+    				<span class="pa blackMask"></span>
+    				<img class="default" alt="祥和酒店时钟房/3小时套餐" src="img/b18ada9a-4d32-4711-9b61-1ecd16674836.jpg" style="display: inline;">
+    			</a>
+			</dt>
+									<dd class="clearfix">
+				<h6 class="ml10 mr10 symbleDot"><a class="f14" href="#" target="_blank">祥和酒店时钟房/3小时套餐</a></h6>	    			
+				<p class="fl ml10">面值:<strong class="f24 textRed mr5 ml5">50</strong>元</p>
+				<p class="fr mr10 white f12">返利7.04元</p>
+			</dd>
+		</dl>
+	</div>
+	<div class="span4">
+		<dl class="duonaBox yh">
+			<dt>
+    			<strong class="topBx clearfix fn f12 yh pt5 pb5">
+    				    				<span class="fl icons iHeart pl30">1965</span>
+    				<span class="fr mr10">剩余：651</span>
+    			</strong>
+    			<a class="pr" href="#" target="_blank">
+    				<em class="white pa f18 transition time_2s">仅售：0.99元</em>
+    				<span class="pa blackMask"></span>
+    				<img class="default" alt="源缘度假山庄真人CS野战套餐" src="img/9d1b2ca3-9154-41e1-b121-e58b15f18487.jpg" style="display: inline;">
+    			</a>
+			</dt>
+									<dd class="clearfix">
+				<h6 class="ml10 mr10 symbleDot"><a class="f14" href="#" target="_blank">源缘度假山庄真人CS野战套餐</a></h6>	    			
+				<p class="fl ml10">面值:<strong class="f24 textRed mr5 ml5">70</strong>元</p>
+				<p class="fr mr10 white f12">返利7.12元</p>
+			</dd>
+		</dl>
+	</div>
+	<div class="span4">
+		<dl class="duonaBox yh">
+			<dt>
+    			<strong class="topBx clearfix fn f12 yh pt5 pb5">
+    				    				<span class="fl icons iHeart pl30">12717</span>
+    				<span class="fr mr10">剩余：4236</span>
+    			</strong>
+    			<a class="pr" href="#" target="_blank">
+    				<em class="white pa f18 transition time_2s">仅售：0.99元</em>
+    				<span class="pa blackMask"></span>
+    				<img class="default" alt="锦顺酒店单人房套餐" src="img/911b7d03-6e66-4e95-a88d-9f1bbd54c822.jpg" style="display: inline;">
+    			</a>
+			</dt>
+									<dd class="clearfix">
+				<h6 class="ml10 mr10 symbleDot"><a class="f14" href="#" target="_blank">锦顺酒店单人房套餐</a></h6>	    			
+				<p class="fl ml10">面值:<strong class="f24 textRed mr5 ml5">50</strong>元</p>
+				<p class="fr mr10 white f12">返利15.04元</p>
+			</dd>
+		</dl>
+	</div>
+	<div class="span4">
+		<dl class="duonaBox yh">
+			<dt>
+    			<strong class="topBx clearfix fn f12 yh pt5 pb5">
+    				    				<span class="fl icons iHeart pl30">6399</span>
+    				<span class="fr mr10">剩余：2129</span>
+    			</strong>
+    			<a class="pr" href="#" target="_blank">
+    				<em class="white pa f18 transition time_2s">仅售：0.99元</em>
+    				<span class="pa blackMask"></span>
+    				<img class="default" alt="芭菱艺莎时尚摄影闺蜜套餐" src="img/b71325ab-3174-4643-a772-189761cf350a.jpg" style="display: inline;">
+    			</a>
+			</dt>
+									<dd class="clearfix">
+				<h6 class="ml10 mr10 symbleDot"><a class="f14" href="#" target="_blank">芭菱艺莎时尚摄影闺蜜套餐</a></h6>	    			
+				<p class="fl ml10">面值:<strong class="f18 textRed mr5 ml5">1511</strong>元</p>
+				<p class="fr mr10 white f12">返利31.04元</p>
+			</dd>
+		</dl>
+	</div>
+	<div class="duonaBrand blueBrand w250 yh">
+		<div class="accordion duonaBox" id="accordion2">
+			<h5 class="ml10 f16 bf">休闲娱乐 <span class="fn">·</span> 排行榜</h5>
+			            <div class="accordion-group">
+								<div class="accordion-heading blueBG">
+					                <a class="accordion-toggle symbleDot" title="金星农庄休闲套餐" data-toggle="collapse" data-parent="#accordion2" href="#">
+	                  <!--1.-->[90元]金星农庄休闲套餐
+	                </a>
+             	</div>
+								<div id="collapseOne59" class="accordion-body in collapse" style="height: auto;">
+					                <div class="accordion-inner">
+						<a href="#" target="_blank"><img class="default" alt="金星农庄休闲套餐" src="img/b3dcfca4-73fe-4e2b-8b9d-93fb17f9a36c.jpg" style="display: inline;"></a>
+	                </div>
+				</div>
+			</div>
+                        <div class="accordion-group">
+								<div class="accordion-heading">
+					                <a class="accordion-toggle symbleDot" title="亲亲贝比儿童摄影宝贝套餐" data-toggle="collapse" data-parent="#accordion2" href="#">
+	                  <!--2.-->[1089元]亲亲贝比儿童摄影宝贝套餐
+	                </a>
+             	</div>
+								<div id="collapseOne14" class="accordion-body collapse" style="height: 0;">
+					                <div class="accordion-inner">
+						<a href="#" target="_blank"><img class="default" alt="亲亲贝比儿童摄影宝贝套餐" src="img/75c9f0ae-061a-4397-92ea-6e1846b24e4e.jpg" style="display: inline;"></a>
+	                </div>
+				</div>
+			</div>
+                        <div class="accordion-group">
+								<div class="accordion-heading">
+					                <a class="accordion-toggle symbleDot" title="源缘度假山庄真人CS野战套餐" data-toggle="collapse" data-parent="#accordion2" href="#">
+	                  <!--3.-->[70元]源缘度假山庄真人CS野战套餐
+	                </a>
+             	</div>
+								<div id="collapseOne300" class="accordion-body collapse" style="height: 0;">
+					                <div class="accordion-inner">
+						<a href="#" target="_blank"><img class="default" alt="源缘度假山庄真人CS野战套餐" src="img/1befee01-fc50-4958-887d-d1d443949e5a.jpg" style="display: inline;"></a>
+	                </div>
+				</div>
+			</div>
+                        <div class="accordion-group">
+								<div class="accordion-heading">
+					                <a class="accordion-toggle symbleDot" title="战狼帝国真人CS野战套餐" data-toggle="collapse" data-parent="#accordion2" href="#">
+	                  <!--4.-->[148元]战狼帝国真人CS野战套餐
+	                </a>
+             	</div>
+								<div id="collapseOne25" class="accordion-body collapse" style="height: 0;">
+					                <div class="accordion-inner">
+						<a href="#" target="_blank"><img class="default" alt="战狼帝国真人CS野战套餐" src="img/7f8a2243-de46-4621-baba-76e920b9fed4.jpg" style="display: inline;"></a>
+	                </div>
+				</div>
+			</div>
+                        <div class="accordion-group">
+								<div class="accordion-heading">
+					                <a class="accordion-toggle symbleDot" title="芭菱艺莎时尚摄影闺蜜套餐" data-toggle="collapse" data-parent="#accordion2" href="#">
+	                  <!--5.-->[1511元]芭菱艺莎时尚摄影闺蜜套餐
+	                </a>
+             	</div>
+								<div id="collapseOne175" class="accordion-body collapse" style="height: 0;">
+					                <div class="accordion-inner">
+						<a href="#" target="_blank"><img class="default" alt="芭菱艺莎时尚摄影闺蜜套餐" src="img/3f4c7a29-795b-4f4d-9a90-a0810befeec4.jpg" style="display: inline;"></a>
+	                </div>
+				</div>
+			</div>
+                  </div><!-- 手风琴内容·结束 -->
+	</div><!-- 榜单·结束 -->
+</div>
+<<!-- 美容保健 -->
+<h3 class="contentTitle icons cBeauty bf clearfix">
+	<strong class="f20 textPink">美容保健</strong>
+	<span class="f14 fn">Recreation</span>
+	<strong class="fn ml50 mr5 f12 textRed">热门推介：</strong>
+				<a class="mrt5 text333 f12 fn" href="#">美发</a>
+										<a class="mrt5 textRed f12 fn" href="#">化妆品</a>
+						<a class="mrt5 text333 f12 fn" href="#">瑜伽</a>
+										<a class="mrt5 textRed f12 fn" href="#">养生健身</a>
+						<a class="mrt5 text333 f12 fn" href="#">美甲</a>
+										<a class="mrt5 textRed f12 fn" href="#">美容spa</a>
+						<a class="mrt5 text333 f12 fn" href="#">足疗按摩</a>
+						<a class="fr f14 textPink" href="#">更多<span class="arrow_tra fr ml5 mt10"></span></a>
+</h3>
+<div class="mainRow row oh">
+		<div class="span4">
+		<dl class="duonaBox yh">
+			<dt>
+    			<strong class="topBx clearfix fn f12 yh pt5 pb5">
+    				    				<span class="fl icons iHeart pl30">1365</span>
+    				<span class="fr mr10">剩余：452</span>
+    			</strong>
+    			<a class="pr" href="#" target="_blank">
+    				<em class="white pa f18 transition time_2s">仅售：0.99元</em>
+    				<span class="pa blackMask"></span>
+    				<img class="default" alt="自然美（采韵居）美容养生馆水娃娃美白嫩肤体验套餐" src="img/fabea1c7-706c-44bc-b57e-3b47685397ca.jpg" style="display: inline;">
+    			</a>
+			</dt>
+									<dd class="clearfix">
+				<h6 class="ml10 mr10 symbleDot"><a class="f14" href="#" target="_blank">自然美（采韵居）美容养生馆水娃娃美白嫩肤体验套餐</a></h6>	    			
+				<p class="fl ml10">面值:<strong class="f24 textRed mr5 ml5">340</strong>元</p>
+				<p class="fr mr10 white f12">返利4.64元</p>
+			</dd>
+		</dl>
+	</div>
+		<div class="span4">
+		<dl class="duonaBox yh">
+			<dt>
+    			<strong class="topBx clearfix fn f12 yh pt5 pb5">
+    				    				<span class="fl icons iHeart pl30">1200</span>
+    				<span class="fr mr10">剩余：397</span>
+    			</strong>
+    			<a class="pr" href="#" target="_blank">
+    				<em class="white pa f18 transition time_2s">仅售：0.99元</em>
+    				<span class="pa blackMask"></span>
+    				<img class="default" alt="尚秀伊人设计造型欧莱雅烫染直长发套餐" src="img/81a42d32-7d1a-4a04-9a60-052c6feb21c1.jpg" style="display: inline;">
+    			</a>
+			</dt>
+									<dd class="clearfix">
+				<h6 class="ml10 mr10 symbleDot"><a class="f14" href="#" target="_blank">尚秀伊人设计造型欧莱雅烫染直长发套餐</a></h6>	    			
+				<p class="fl ml10">面值:<strong class="f24 textRed mr5 ml5">136</strong>元</p>
+				<p class="fr mr10 white f12">返利43.52元</p>
+			</dd>
+		</dl>
+	</div>
+		<div class="span4">
+		<dl class="duonaBox yh">
+			<dt>
+    			<strong class="topBx clearfix fn f12 yh pt5 pb5">
+    				    				<span class="fl icons iHeart pl30">1377</span>
+    				<span class="fr mr10">剩余：456</span>
+    			</strong>
+    			<a class="pr" href="#" target="_blank">
+    				<em class="white pa f18 transition time_2s">仅售：0.99元</em>
+    				<span class="pa blackMask"></span>
+    				<img class="default" alt="指邀妮美美甲眼部玛瑙排毒护理包眼膜套餐" src="img/ca5bd40d-1aa0-45e1-957d-2ce2ee3f44b9.jpg" style="display: inline;">
+    			</a>
+			</dt>
+									<dd class="clearfix">
+				<h6 class="ml10 mr10 symbleDot"><a class="f14" href="#" target="_blank">指邀妮美美甲眼部玛瑙排毒护理包眼膜套餐</a></h6>	    			
+				<p class="fl ml10">面值:<strong class="f24 textRed mr5 ml5">5</strong>元</p>
+				<p class="fr mr10 white f12">返利9.84元</p>
+			</dd>
+		</dl>
+	</div>
+		<div class="span4">
+		<dl class="duonaBox yh">
+			<dt>
+    			<strong class="topBx clearfix fn f12 yh pt5 pb5">
+    				    				<span class="fl icons iHeart pl30">15069</span>
+    				<span class="fr mr10">剩余：5020</span>
+    			</strong>
+    			<a class="pr" href="#" target="_blank">
+    				<em class="white pa f18 transition time_2s">仅售：0.99元</em>
+    				<span class="pa blackMask"></span>
+    				<img class="default" alt="肤之恋美容养生馆腰部艾灸套餐" src="img/30542b0e-4617-4f1d-84e0-89b9e7056be6.jpg" style="display: inline;">
+    			</a>
+			</dt>
+									<dd class="clearfix">
+				<h6 class="ml10 mr10 symbleDot"><a class="f14" href="#" target="_blank">肤之恋美容养生馆腰部艾灸套餐</a></h6>	    			
+				<p class="fl ml10">面值:<strong class="f24 textRed mr5 ml5">230</strong>元</p>
+				<p class="fr mr10 white f12">返利13.44元</p>
+			</dd>
+		</dl>
+	</div>
+		<div class="duonaBrand pinkBrand w250 yh">
+		<div class="accordion duonaBox" id="accordion3">
+			<h5 class="ml10 f16 bf">美容保健 <span class="fn">·</span> 排行榜</h5>
+			            <div class="accordion-group">
+								<div class="accordion-heading pinkBG">
+					                <a class="accordion-toggle symbleDot" title="LEVEL.A发廊染发套餐" data-toggle="collapse" data-parent="#accordion3" href="#">
+	                  <!--1.-->[302元]LEVEL.A发廊染发套餐
+	                </a>
+             	</div>
+								<div id="collapseOne126" class="accordion-body in collapse" style="height: auto;">
+					                <div class="accordion-inner">
+						<a href="http://www.iduona.com/denomination/126.htm" target="_blank"><img class="default" alt="LEVEL.A发廊染发套餐" src="img/9ba588ac-4a7d-4407-9b0e-f3918d63310a.jpg" style="display: inline;"></a>
+	                </div>
+				</div>
+			</div>
+                        <div class="accordion-group">
+								<div class="accordion-heading">
+					                <a class="accordion-toggle symbleDot" title="LEVEL.A发廊高级洗剪吹" data-toggle="collapse" data-parent="#accordion3" href="#">
+	                  <!--2.-->[114元]LEVEL.A发廊高级洗剪吹
+	                </a>
+             	</div>
+								<div id="collapseOne1" class="accordion-body collapse" style="height: 0;">
+					                <div class="accordion-inner">
+						<a href="http://www.iduona.com/denomination/1.htm" target="_blank"><img class="default" alt="LEVEL.A发廊高级洗剪吹" src="img/e255ffa3-0a85-47e7-aead-c1298c4c6d6d.jpg" style="display: inline;"></a>
+	                </div>
+				</div>
+			</div>
+                        <div class="accordion-group">
+								<div class="accordion-heading">
+					                <a class="accordion-toggle symbleDot" title="LEVEL.A发廊烫发/直发套餐" data-toggle="collapse" data-parent="#accordion3" href="#">
+	                  <!--3.-->[338元]LEVEL.A发廊烫发/直发套餐
+	                </a>
+             	</div>
+								<div id="collapseOne127" class="accordion-body collapse" style="height: 0;">
+					                <div class="accordion-inner">
+						<a href="#" target="_blank"><img class="default" alt="LEVEL.A发廊烫发/直发套餐" src="img/d78cbe41-ff6f-4ef7-a7f9-332a8960909b.jpg" style="display: inline;"></a>
+	                </div>
+				</div>
+			</div>
+                        <div class="accordion-group">
+								<div class="accordion-heading">
+					                <a class="accordion-toggle symbleDot" title="咏芳阁美甲套餐" data-toggle="collapse" data-parent="#accordion3" href="#">
+	                  <!--4.-->[16元]咏芳阁美甲套餐
+	                </a>
+             	</div>
+								<div id="collapseOne68" class="accordion-body collapse" style="height: 0;">
+					                <div class="accordion-inner">
+						<a href="#" target="_blank"><img class="default" alt="咏芳阁美甲套餐" src="img/fe07a78d-1648-4586-bf7c-566680dd8923.jpg" style="display: inline;"></a>
+	                </div>
+				</div>
+			</div>
+                        <div class="accordion-group">
+								<div class="accordion-heading">
+					                <a class="accordion-toggle symbleDot" title="芊艺莱凡开通超值会员卡消费九折优惠套餐" data-toggle="collapse" data-parent="#accordion3" href="#">
+	                  <!--5.-->[180元]芊艺莱凡开通超值会员卡消费九折优惠套餐
+	                </a>
+             	</div>
+								<div id="collapseOne350" class="accordion-body collapse" style="height: 0;">
+					                <div class="accordion-inner">
+						<a href="#" target="_blank"><img class="default" alt="芊艺莱凡开通超值会员卡消费九折优惠套餐" src="img/da84a251-46be-41b6-a4e1-9644e949c5ae.jpg" style="display: inline;"></a>
+	                </div>
+				</div>
+			</div>
+                  </div><!-- 手风琴内容·结束 -->
+	</div><!-- 榜单·结束 -->
+</div>	
+
+<h3 class="contentTitle icons cLive bf clearfix">
+	<strong class="f20 textGreen">生活服务</strong>
+	<span class="f14 fn">Recreation</span>
+	<strong class="fn ml50 mr5 f12 textRed">热门推介：</strong>
+				<a class="mrt5 text333 f12 fn" href="#">汽车养护</a>
+										<a class="mrt5 textRed f12 fn" href="#">健康护理</a>
+						<a class="mrt5 text333 f12 fn" href="#">教育培训</a>
+										<a class="mrt5 textRed f12 fn" href="#">验光配镜</a>
+						<a class="mrt5 text333 f12 fn" href="#">服装箱包</a>
+										<a class="mrt5 textRed f12 fn" href="#">电子产品</a>
+						<a class="mrt5 text333 f12 fn" href="#">门票</a>
+						<a class="fr f14 textGreen" href="#">更多<span class="arrow_tra fr ml5 mt10"></span></a>
+</h3>
+<div class="mainRow row oh">
+		<div class="span4">
+		<dl class="duonaBox yh">
+			<dt>
+    			<strong class="topBx clearfix fn f12 yh pt5 pb5">
+    				    				<span class="fl icons iHeart pl30">591</span>
+    				<span class="fr mr10">剩余：194</span>
+    			</strong>
+    			<a class="pr" href="#" target="_blank">
+    				<em class="white pa f18 transition time_2s">仅售：0.99元</em>
+    				<span class="pa blackMask"></span>
+    				<img class="default" alt="金典牙科口腔疾病检查套餐" src="img/607a36b4-c1d7-4163-99cc-360ebe721a29.jpg" style="display: inline;">
+    			</a>
+			</dt>
+									<dd class="clearfix">
+				<h6 class="ml10 mr10 symbleDot"><a class="f14" href="#" target="_blank">金典牙科口腔疾病检查套餐</a></h6>	    			
+				<p class="fl ml10">面值:<strong class="f24 textRed mr5 ml5">232</strong>元</p>
+				<p class="fr mr10 white f12">返利3.84元</p>
+			</dd>
+		</dl>
+	</div>
+		<div class="span4">
+		<dl class="duonaBox yh">
+			<dt>
+    			<strong class="topBx clearfix fn f12 yh pt5 pb5">
+    				    				<span class="fl icons iHeart pl30">1056</span>
+    				<span class="fr mr10">剩余：348</span>
+    			</strong>
+    			<a class="pr" href="#" target="_blank">
+    				<em class="white pa f18 transition time_2s">仅售：0.99元</em>
+    				<span class="pa blackMask"></span>
+    				<img class="default" alt="美赛施内衣（满40元可用）" src="img/d1804ab6-b952-4687-949b-81e5b55ad912.jpg" style="display: inline;">
+    			</a>
+			</dt>
+									<dd class="clearfix">
+				<h6 class="ml10 mr10 symbleDot"><a class="f14" href="#" target="_blank">美赛施内衣（满40元可用）</a></h6>	    			
+				<p class="fl ml10">面值:<strong class="f24 textRed mr5 ml5">9</strong>元</p>
+				<p class="fr mr10 white f12">返利3.2元</p>
+			</dd>
+		</dl>
+	</div>
+		<div class="span4">
+		<dl class="duonaBox yh">
+			<dt>
+    			<strong class="topBx clearfix fn f12 yh pt5 pb5">
+    				    				<span class="fl icons iHeart pl30">1893</span>
+    				<span class="fr mr10">剩余：628</span>
+    			</strong>
+    			<a class="pr" href="#" target="_blank">
+    				<em class="white pa f18 transition time_2s">仅售：0.99元</em>
+    				<span class="pa blackMask"></span>
+    				<img class="default" alt="荣泰按摩椅（满500元可用）" src="img/53273800-d4c4-4fd7-8ff0-10e2f6b45ef7.jpg" style="display: inline;">
+    			</a>
+			</dt>
+									<dd class="clearfix">
+				<h6 class="ml10 mr10 symbleDot"><a class="f14" href="#" target="_blank">荣泰按摩椅（满500元可用）</a></h6>	    			
+				<p class="fl ml10">面值:<strong class="f24 textRed mr5 ml5">60</strong>元</p>
+				<p class="fr mr10 white f12">返利40元</p>
+			</dd>
+		</dl>
+	</div>
+		<div class="span4">
+		<dl class="duonaBox yh">
+			<dt>
+    			<strong class="topBx clearfix fn f12 yh pt5 pb5">
+    				    				<span class="fl icons iHeart pl30">66</span>
+    				<span class="fr mr10">剩余：18</span>
+    			</strong>
+    			<a class="pr" href="#" target="_blank">
+    				<em class="white pa f18 transition time_2s">仅售：0.99元</em>
+    				<span class="pa blackMask"></span>
+    				<img class="default" alt="帅影迷你电影机" src="img/87144e58-1670-4180-b341-bc56abb6703e.jpg" style="display: inline;">
+    			</a>
+			</dt>
+									<dd class="clearfix">
+				<h6 class="ml10 mr10 symbleDot"><a class="f14" href="#" target="_blank">帅影迷你电影机</a></h6>	    			
+				<p class="fl ml10">面值:<strong class="f24 textRed mr5 ml5">300</strong>元</p>
+				<p class="fr mr10 white f12">返利75.6元</p>
+			</dd>
+		</dl>
+	</div>
+		<div class="duonaBrand greenBrand w250 yh">
+		<div class="accordion duonaBox" id="accordion4">
+			<h5 class="ml10 f16 bf">生活服务 <span class="fn">·</span> 排行榜</h5>
+			            <div class="accordion-group">
+								<div class="accordion-heading greenBG">
+					                <a class="accordion-toggle symbleDot" title="美赛施内衣（满40元可用）" data-toggle="collapse" data-parent="#accordion4" href="#">
+	                  <!--1.-->[9元]美赛施内衣（满40元可用）
+	                </a>
+             	</div>
+								<div id="collapseOne43" class="accordion-body in collapse" style="height: auto;">
+					                <div class="accordion-inner">
+						<a href="#" target="_blank"><img class="default" alt="美赛施内衣（满40元可用）" src="img/edd84222-1cfe-4304-a969-a6d5b6c81f9e.jpg" style="display: inline;"></a>
+	                </div>
+				</div>
+			</div>
+                        <div class="accordion-group">
+								<div class="accordion-heading">
+					                <a class="accordion-toggle symbleDot" title="帅影迷你电影机" data-toggle="collapse" data-parent="#accordion4" href="#">
+	                  <!--2.-->[300元]帅影迷你电影机
+	                </a>
+             	</div>
+								<div id="collapseOne58" class="accordion-body collapse" style="height: 0;">
+					                <div class="accordion-inner">
+						<a href="#" target="_blank"><img class="default" alt="帅影迷你电影机" src="img/62ae7cce-b29c-446f-8534-bd13646a7068.jpg" style="display: inline;"></a>
+	                </div>
+				</div>
+			</div>
+                        <div class="accordion-group">
+								<div class="accordion-heading">
+					                <a class="accordion-toggle symbleDot" title="香港3861国际母婴馆婴儿按摩套餐" data-toggle="collapse" data-parent="#accordion4" href="#">
+	                  <!--3.-->[40元]香港3861国际母婴馆婴儿按摩套餐
+	                </a>
+             	</div>
+								<div id="collapseOne179" class="accordion-body collapse" style="height: 0;">
+					                <div class="accordion-inner">
+						<a href="#" target="_blank"><img class="default" alt="香港3861国际母婴馆婴儿按摩套餐" src="img/9cf129be-5ee2-4869-a33a-14a1695fa4c4.jpg" style="display: inline;"></a>
+	                </div>
+				</div>
+			</div>
+                        <div class="accordion-group">
+								<div class="accordion-heading">
+					                <a class="accordion-toggle symbleDot" title="美赛施内衣（满100元可用）" data-toggle="collapse" data-parent="#accordion4" href="#">
+	                  <!--4.-->[20元]美赛施内衣（满100元可用）
+	                </a>
+             	</div>
+								<div id="collapseOne44" class="accordion-body collapse" style="height: 0;">
+					                <div class="accordion-inner">
+						<a href="#" target="_blank"><img class="default" alt="美赛施内衣（满100元可用）" src="img/edd84222-1cfe-4304-a969-a6d5b6c81f9e.jpg" style="display: inline;"></a>
+	                </div>
+				</div>
+			</div>
+                        <div class="accordion-group">
+								<div class="accordion-heading">
+					                <a class="accordion-toggle symbleDot" title="荣泰按摩椅（满1万元可用）" data-toggle="collapse" data-parent="#accordion4" href="#">
+	                  <!--5.-->[1500元]荣泰按摩椅（满1万元可用）
+	                </a>
+             	</div>
+								<div id="collapseOne57" class="accordion-body collapse" style="height: 0;">
+					                <div class="accordion-inner">
+						<a href="#" target="_blank"><img class="default" alt="荣泰按摩椅（满1万元可用）" src="img/bc01a860-4a38-480a-932e-962237bdcd60.jpg" style="display: inline;"></a>
+	                </div>
+				</div>
+			</div>
+                  </div><!-- 手风琴内容·结束 -->
+	</div><!-- 榜单·结束 -->
+</div>
+<!-- 生活服务·结束 -->
+</div><!-- 各列表·结束 -->
+<div class="duonaNews container yh">
+	<div class="span7">
+		<h5 class="f14 fn">
+			<strong class="textRed f18 mr10 fb">多拿网</strong>优惠券官方网站
+		</h5>
+		<ol class="borderR0">
+			
+<li class="symbleDot w"><span class="mr5">1.</span><a class="text333" href="#" target="_blank">认识下品牌资源整合的六碳网</a></li>
+<li class="symbleDot w"><span class="mr5">2.</span><a class="text333" href="#" target="_blank">广州2014年迎春花市开始的时间和地点</a></li>
+<li class="symbleDot w"><span class="mr5">3.</span><a class="text333" href="#" target="_blank">广州一日游哪里好玩推荐</a></li>
+<li class="symbleDot w"><span class="mr5">4.</span><a class="text333" href="#" target="_blank">广州好玩的地方</a></li>
+<li class="symbleDot w"><span class="mr5">5.</span><a class="text333" href="#" target="_blank">广州自助餐美食介绍</a></li>
+
+			<li class="tr w "><a class="textRed" href="#">more&gt;&gt;</a></li>
+		</ol>
+	</div>
+	<div class="span7">
+		<h5 class="f14 fn">
+			<strong class="textRed f18 mr10 fb">代金券</strong>多拿网随机资讯
+		</h5>
+		<ol class="borderR0">
+			
+			<li class="symbleDot w">
+				<span class="mr5">1.</span>
+				<a class="text333" href="#" target="_blank">舞动在舌尖上的甜品</a></li>
+			
+			<li class="symbleDot w">
+				<span class="mr5">2.</span>
+				<a class="text333" href="# target="_blank">多拿网教你怎么在广州娱乐</a></li>
+			
+			<li class="symbleDot w">
+				<span class="mr5">3.</span>
+				<a class="text333" href="# target="_blank"> 日本料理</a></li>
+			
+			<li class="symbleDot w">
+				<span class="mr5">4.</span>
+				<a class="text333" href="#" target="_blank">奢侈品网购</a></li>
+			
+			<li class="symbleDot w">
+				<span class="mr5">5.</span>
+				<a class="text333" href="#" target="_blank">百变时装秀</a></li>
+			
+			<li class="tr w "><a class="textRed" href="#">more&gt;&gt;</a></li>
+		</ol>
+	</div>
+	<div class="span7">
+		<h5 class="f14 fn">
+			<strong class="textRed f18 mr10 fb">优惠券</strong>多拿网最新推荐
+		</h5>
+		<ol>
+			
+<li class="symbleDot w"><span class="mr5">1.</span><a class="text333" href="#" target="_blank">认识下品牌资源整合的六碳网</a></li>
+<li class="symbleDot w"><span class="mr5">2.</span><a class="text333" href="#" target="_blank">广州2014年迎春花市开始的时间和地点</a></li>
+<li class="symbleDot w"><span class="mr5">3.</span><a class="text333" href="#" target="_blank">多拿网是怎样消费的？</a></li>
+<li class="symbleDot w"><span class="mr5">4.</span><a class="text333" href="#" target="_blank">线下返利概述</a></li>
+<li class="symbleDot w"><span class="mr5">5.</span><a class="text333" href="#" target="_blank">线下返利网</a></li>
+
+			<li class="tr w "><a class="textRed" href="#">more&gt;&gt;</a></li>
+		</ol>
+	</div>
+</div>
+<div class="duonaSafty container mt20"><img class="block auto" src="img/safty.jpg"></div>
+<div id="footer"></div>
+<a id="scrollUp" href="#top" title style="position: fixed; z-index: 2147483647; display: block;"></a>
+</body>
+</html>
+<script src="js/jquery-1.11.1.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/first.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/public.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/jquery.cookie.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/common_register.js" type="text/javascript" charset="utf-8"></script>

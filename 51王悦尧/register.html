@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/public.css"/>
+		<link rel="stylesheet" type="text/css" href="css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="css/bootsrap.css"/>
+		<link rel="stylesheet" type="text/css" href="css/bootsrap1024.css"/>
+		<link rel="stylesheet" type="text/css" href="css/jNotify.css"/>
+		<link rel="stylesheet" type="text/css" href="css/layer.css"/>
+		<link rel="stylesheet" type="text/css" href="css/page.css"/>
+		<link rel="stylesheet" type="text/css" href="css/labs.css"/>
+	</head>
+	<body>
+<div class="header">
+	<div class="w menuBar pr">
+		<ul class="container auto cleafix menuBar_menu tc yh pr f16 fb" id="menuBar_menu">
+			<li class="afterLogin span8" id="loginStatus">
+		    </li>
+			<li class="fr" data-flag="true"><a href="first.html" class="white">返回首页</a></li>
+			<li class="fr mr10" data-flag="true"><a href="cart.html" class="white">购物车</a></li>
+			<li class="fr mr10" data-flag="true"><a href="login.html" class="white">登录</a></li>
+			<li class="fr mr10 selected" data-flag="true"><a href="register.html" class="white">注册</a></li>
+		</ul>
+	</div>
+</div>
+<div class="registerWrapper">
+ 	<div class="container pr">
+		<div class="xiaoDuo pa registerX">小多，多拿网形象</div>
+		<div class="row yh">
+			<div><a class="w500 block registerLogo mt20" href="first.html">多拿网</a></div>
+			<ol class="registerProcess step1 clearfix auto">
+				<li class="fl f18 white tc">01.填写信息</li>
+				<li class="fl f18 white tc">02.注册验证</li>
+				<li class="fl f18 white tc">03.注册成功</li>
+			</ol>
+			<div class="resigterForm w500 auto mt30">
+				<a href="login.jhtml" class="resigterForm_loginBtn text-success w300 auto block mb10 tr">您已有账号？<strong>立即登陆</strong></a>
+				<form class="form-horizontal auto" id="registerForm" action="register.html" method="post">
+					<fieldset>
+			  			<div class="control-group">
+					    	<label class="control-label" for="inputEmail">账号：</label>
+						    <div class="controls">
+						      <input type="text" id="inputEmail" placeholder="填写邮箱/手机号" name="passport" tabindex="1">
+						      <span class="help-block" title="请填写邮箱/手机">请填写邮箱/手机</span>
+						    </div>
+					  	</div>
+					  	</script>
+					  	<div class="control-group">
+					    	<label class="control-label" for="inputPassword">密码：</label>
+					    	<div class="controls">
+					     	 	<input type="password" id="inputPassword" placeholder="输入密码" name="password" tabindex="2">
+					     	 	<span class="help-block" title="请输入6-20位的密码">请输入6-20位的密码</span>
+					    	</div>
+					  	</div>
+					  	<div class="control-group">
+					    	<label class="control-label" for="inputPassword">确认密码：</label>
+					    	<div class="controls">
+					     	 	<input type="password" id="inputRePassword" placeholder="再次输入密码" name="checkPassword" tabindex="3">
+					     	 	<span class="help-block cb" title="请再次输入密码">请再次输入密码</span>
+					    	</div>
+					  	</div>
+					  	<div class="control-group">
+					    	<label class="control-label" for="inputValidCode">验证码：</label>
+					    	<div class="controls oh">
+					     	 	<input type="text" name="validCode" id="inputValidCode" class="w100 fl" placeholder="请输入验证码" tabindex="4">
+					     	 	<img id="registerValid" class="fl ml20 validCodeImg cursor" src="img/validate.img" alt="验证码" title="点击更换">
+					     	 	<span class="help-block cb pt10" title="请输入验证码">请输入验证码</span>
+					    	</div>
+					  	</div>
+					  	<div class="control-group">
+					    	<div class="controls">
+								<span class="f14 fl ml5 lh100">已阅读并同意相关<a href="#" target="_blank" class="red">“多拿网服务协议”</a></span>
+					    	</div>
+					  	</div>
+			  			<a href="javascript:void(0)" class="nextBtn auto mt30" id="registerBtn" tabindex="5">下一步</a>
+			  		</fieldset>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="footer"></div>
+	</body>
+</html>
+<script src="js/jquery-1.11.1.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/public.js"></script>
+<script src="js/common_register.js" type="text/javascript" charset="utf-8"></script>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/public.css"/>
+		<link rel="stylesheet" type="text/css" href="css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="css/bootsrap.css"/>
+		<link rel="stylesheet" type="text/css" href="css/bootsrap1024.css"/>
+		<link rel="stylesheet" type="text/css" href="css/jNotify.css"/>
+		<link rel="stylesheet" type="text/css" href="css/layer.css"/>
+		<link rel="stylesheet" type="text/css" href="css/page.css"/>
+		
+	</head>
+	<body>
+<div class="header">
+	<div class="w menuBar pr">
+		<ul class="container auto cleafix menuBar_menu tc yh pr f16 fb" id="menuBar_menu">
+			<li class="afterLogin span8" id="loginStatus">
+		    </li>
+			<li class="fr" data-flag="true"><a href="first.html" class="white">返回首页</a></li>
+			<li class="fr mr10" data-flag="true"><a href="cart.html" class="white">购物车</a></li>
+			<li class="fr mr10 selected" data-flag="true"><a href="login.html" class="white">登录</a></li>
+			<li class="fr mr10" data-flag="true"><a href="register.html" class="white">注册</a></li>
+		</ul>
+	</div>
+</div>
+<div class="loginWrapper pr" style="margin-bottom:-20px;">
+	<div class="container pr">
+		<a class="span20 cb loginLogo mt20" href="javascript:void(0)">多拿网</a>
+		<div class="xiaoDuo pa loginX">小多，多拿网形象</div>
+		<div class="row yh cb">
+			<div class="loginInfo span10 tc">
+				<img class="mt30" src="img/logininfoImg.png" alt="">
+			</div>
+			<div class="loginForm span10">
+				<form class="form-horizontal auto" action="login.html" method="post" id="loginForm">
+				<fieldset>
+					<legend class="tc bf f24 pt10">会员登录</legend>
+				  	<div class="control-group cb tl">
+				    	<label class="control-label" for="inputEmail">账号：</label>
+					    <div class="controls oh">
+					      <input type="text" id="inputEmail" class="fl" placeholder="填写邮箱/手机号" name="passport" tabindex="1">
+					      <span class="help-block cb" title="请填写邮箱/手机">请填写邮箱/手机</span>
+					    </div>
+				  	</div>
+				  	<div class="control-group cb tl">
+				    	<label class="control-label" for="inputPassword">密码：</label>
+				    	<div class="controls pr">
+				    		<a href="#" class="loginForm_forgetPW text-success pa" target="_blank">忘记密码？</a>
+				     	 	<input type="password" id="inputPassword" class="fl" placeholder="密码" name="password" tabindex="2">
+				     	 	<span class="help-block cb" title="请输入6-20位的密码">请输入6-20位的密码</span>
+				    	</div>
+				  	</div>
+				  	<div class="control-group cb tl">
+				    	<label class="control-label" for="inputValidCode">验证码：</label>
+					    <div class="controls clearfix">
+					      	<input class="input-small fl" type="text" id="inputValidCode" placeholder="填写验证码" name="validCode" tabindex="3">
+					      	<img id="registerValid" class="validCodeImg cursor fl ml10" src="img/validate.img" alt="验证码" title="点击更换">
+					    	<span class="help-block cb" title="请输入验证码">请输入验证码</span>
+					    </div>
+					    
+				  	</div>
+				  	<div class="control-group cb tl">
+				    	<div class="controls loginMargin">
+					      	<label class="checkbox">
+					        	<input type="checkbox" id="remember" checked="checked">记住我的账号
+					        	<a class="ml20 text-success" href="register.html" tabindex="5">免费注册</a>
+					      	</label>
+					      	<a href="javascript:void(0)" class="loginFormBtn block tc f14 fb mt20" id="loginBtn" tabindex="4">登陆</a>
+				    	</div>
+				  	</div>
+				  </fieldset>
+				</form>
+			</div>
+		</div>
+	</div>     
+</div>
+<input type="hidden" value="" id="referer">
+<div id="footer"></div>
+<script src="js/jquery-1.11.1.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/public.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/common_register.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>
